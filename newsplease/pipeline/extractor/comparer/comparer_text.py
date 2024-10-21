@@ -22,9 +22,9 @@ class ComparerText():
                 list_text.append((article_candidate.text, article_candidate.extractor))
 
         # Remove texts that are shorter than min_number_words.
-        for text_tuple in list_text:
-            if len(text_tuple[0].split()) < min_number_words:
-                list_text.remove(text_tuple)
+        # for text_tuple in list_text:
+        #     if len(text_tuple[0].split()) < min_number_words:
+        #         list_text.remove(text_tuple)
 
         # If there is no value in the list, return None.
         if len(list_text) == 0:
